@@ -10,7 +10,7 @@
 
 @interface Render : NSObject {
     
-   
+    int a;
 }
 
 -(void) go:(id) note;
