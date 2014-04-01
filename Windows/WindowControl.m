@@ -26,6 +26,7 @@
     NSLog(@"test window");
 }
 
+
 -(void) setA:(int)_a {
     
     NSLog(@"%d", _a);
