@@ -22,7 +22,7 @@ int main(int argc, const char * argv[])
         [testWindow setWidthWindow:(number=@5) setHeightWindow:(number1=@10) inArray:note];
         NSLog(@"heightWindow = %@", note[@"heightWindow"]);
         Render *testRender = [Render alloc];
-       // [testRender go];
+        [testRender go:note];
 
         
     }
