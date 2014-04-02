@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "WindowControl.h"
 #import "Render.h"
+#import "TextAreaControl.h"
 int main(int argc, const char * argv[])
 {
 
@@ -16,10 +17,21 @@ int main(int argc, const char * argv[])
         id note;
         // полезный код
         NSNumber *number, *number1;
+        //create window
         WindowControl *testWindow = [WindowControl alloc];
         note=[NSMutableDictionary dictionary];
         [testWindow setWidthWindow:(number=@50) setHeightWindow:(number1=@10) inArray:note];
         NSLog(@"heightWindow = %@", note[@"heightWindow"]);
+        // create text area
+        TextAreaControl *testarea = [TextAreaControl alloc];
+        [testarea setWidthWindow:(number=@20) setHeightWindow:(number1=@3) inArray:note];
+        [testarea insertText:@"text label" inArray:note];
+        // create button
+        
+        
+     
+        
+        // render go
         Render *testRender = [Render alloc];
         [testRender go:note];
 

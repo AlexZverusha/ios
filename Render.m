@@ -14,8 +14,11 @@
     int x,j,y,z;
     NSMutableArray *data;
     NSMutableString *datastring;
-    id datawindow, datacontent;
-   
+    NSMutableString *content;
+    id datawindow, datacontent; // window
+    id frameTextArea,contentTextArea; // text area
+    int xPosTextArea, yPosTextArea; // position text area
+    NSNumber *number;
     
     
 }
@@ -30,11 +33,7 @@
 
     data = [NSMutableArray arrayWithObjects: nil];
     datastring = [NSMutableString stringWithCapacity:100];
-    /*
-    for (z=0; z<y; z++) {
-      [data insertObject:datastring atIndex: z];
-    }
-     */
+
     for (j=0; j<x; j++) {
         [datastring insertString:@"-" atIndex:j];  // формироваие  frame
     }
@@ -57,19 +56,44 @@
   //  [data insertObject:@"|   |" atIndex: 1];
  //   [data insertObject:datastring atIndex: y];
     
+    // create text area
+   // data = [NSMutableArray arrayWithObjects: nil];
+    contentTextArea = [NSMutableString stringWithCapacity:100];
+    i=note[@"widthTextArea"];
+    xPosTextArea=[i intValue];
+    i=note[@"heightTextArea"];
+    yPosTextArea=[i intValue];
+    contentTextArea=note[@"textTextArea"];
     
-    /*
-    for (j=0; j<x; j++) {
-        [datastring insertString:@" " atIndex:j];  // формироваие строки
-    }
-    [data insertObject:datastring atIndex: 1];
-    [data insertObject:datastring atIndex: 2];
-    */
+   // [[[[NSMutableString alloc] stringWithCapacity:100] ] insertString:(data[yPosTextArea]) atIndex:0];
+    content=[NSMutableString stringWithCapacity:100];
+    [content insertString:(data[yPosTextArea]) atIndex:0];
+    [content deleteCharactersInRange:NSMakeRange(xPosTextArea, [contentTextArea length])];
+    [content insertString:contentTextArea atIndex:xPosTextArea];
     
+    [data removeObjectAtIndex:yPosTextArea];
+    [data insertObject:content atIndex:yPosTextArea];
+    
+  //  [(data[yPosTextArea]) deleteCharactersInRange:NSMakeRange(xPosTextArea, [contentTextArea length])];
+  //  [(data[yPosTextArea]) insertString:contentTextArea atIndex:xPosTextArea];
+    
+  //  [data indexOfObject:yPosTextArea [removeObjectsInRange:NSMakeRange(xPosTextArea,[contentTextArea length])]];
+   // [data indexOfObject:<#(id)#>]
+    //[data AtIndexes:yPosTextArea];
+  //  [contentTextArea length];
+   
+    //end text area
+    
+    //create button
+    
+    
+    // end button
     
     NSLog(@"%@", data);
-    NSLog(@"z=%dj=%d", z, j);
-   
+    NSLog(@"xPos=%d yPos=%d", xPosTextArea, yPosTextArea);
+    NSLog(@"text area: %@", contentTextArea);
+    NSLog(@"content: %@", content);
+
 }
 
 @end
