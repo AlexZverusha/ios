@@ -18,8 +18,7 @@ int main(int argc, const char * argv[])
         NSNumber *number, *number1;
         WindowControl *testWindow = [WindowControl alloc];
         note=[NSMutableDictionary dictionary];
-        //[testWindow setA:q];
-        [testWindow setWidthWindow:(number=@50) setHeightWindow:(number1=@5) inArray:note];
+        [testWindow setWidthWindow:(number=@50) setHeightWindow:(number1=@10) inArray:note];
         NSLog(@"heightWindow = %@", note[@"heightWindow"]);
         Render *testRender = [Render alloc];
         [testRender go:note];
