@@ -10,6 +10,7 @@
 #import "WindowControl.h"
 #import "Render.h"
 #import "TextAreaControl.h"
+#include "ButtonControl.h"
 int main(int argc, const char * argv[])
 {
 
@@ -28,8 +29,9 @@ int main(int argc, const char * argv[])
         [testarea insertText:@"text label" inArray:note];
         // create button
         
-        
-     
+        ButtonControl *testButton = [ButtonControl alloc];
+        [testButton setWidthButton:(number=@10) setHeightButton:(number1=@8) inArray:note];
+        [testButton insertText:@"button" inArray:note];
         
         // render go
         Render *testRender = [Render alloc];

@@ -15,9 +15,13 @@
     NSMutableArray *data;
     NSMutableString *datastring;
     NSMutableString *content;
+    NSMutableString *button; // button
     id datawindow, datacontent; // window
     id frameTextArea,contentTextArea; // text area
     int xPosTextArea, yPosTextArea; // position text area
+    id textButton; // text button
+    int xPosButton, yPosButton; // position button
+    
     NSNumber *number;
     
     
@@ -38,6 +42,7 @@
         [datastring insertString:@"-" atIndex:j];  // формироваие  frame
     }
     [data insertObject:datastring atIndex: 0]; // верхняя рамка окна
+    
  //   [data insertObject:datastring atIndex: y]; // низ окна
     // create content
     datacontent = [NSMutableString stringWithCapacity:100];
@@ -73,18 +78,22 @@
     
     [data removeObjectAtIndex:yPosTextArea];
     [data insertObject:content atIndex:yPosTextArea];
-    
-  //  [(data[yPosTextArea]) deleteCharactersInRange:NSMakeRange(xPosTextArea, [contentTextArea length])];
-  //  [(data[yPosTextArea]) insertString:contentTextArea atIndex:xPosTextArea];
-    
-  //  [data indexOfObject:yPosTextArea [removeObjectsInRange:NSMakeRange(xPosTextArea,[contentTextArea length])]];
-   // [data indexOfObject:<#(id)#>]
-    //[data AtIndexes:yPosTextArea];
-  //  [contentTextArea length];
-   
     //end text area
     
     //create button
+    i=note[@"widthButton"];
+    xPosButton=[i intValue];
+    i=note[@"heightButton"];
+    yPosButton=[i intValue];
+    textButton=note[@"textButton"];
+    
+    button=[NSMutableString stringWithCapacity:100];
+    [button insertString:(data[yPosButton]) atIndex:0];
+    [button deleteCharactersInRange:NSMakeRange(xPosButton, [textButton length])];
+    [button insertString:textButton atIndex:xPosButton];
+    
+    [data removeObjectAtIndex:yPosButton];
+    [data insertObject:button atIndex:yPosButton];
     
     
     // end button
@@ -98,6 +107,3 @@
 
 @end
 
-// [data insertObject:nil atIndex:++j];
-// data = [NSMutableArray arrayWithObjects:@"test", nil];
-// [data insertObject:@"test" atIndex:0];
