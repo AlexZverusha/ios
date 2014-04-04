@@ -15,4 +15,6 @@
 
 -(void) go:(id) note;
 
+-(void) touch:(id)note;
+
 @end

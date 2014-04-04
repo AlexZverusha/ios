@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8719EF9518EC1A7F002D81AF /* TextAreaControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8719EF9418EC1A7F002D81AF /* TextAreaControl.m */; };
 		8719EF9818EC4450002D81AF /* ButtonControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8719EF9718EC4450002D81AF /* ButtonControl.m */; };
+		8719EF9B18ED88AD002D81AF /* NewWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8719EF9A18ED88AD002D81AF /* NewWindow.m */; };
 		871D40B318DC74AF00BB063F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 871D40B218DC74AF00BB063F /* Foundation.framework */; };
 		871D40B618DC74AF00BB063F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 871D40B518DC74AF00BB063F /* main.m */; };
 		871D40BA18DC74B000BB063F /* Windows.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 871D40B918DC74B000BB063F /* Windows.1 */; };
@@ -34,6 +35,8 @@
 		8719EF9418EC1A7F002D81AF /* TextAreaControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextAreaControl.m; sourceTree = "<group>"; };
 		8719EF9618EC4450002D81AF /* ButtonControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonControl.h; sourceTree = "<group>"; };
 		8719EF9718EC4450002D81AF /* ButtonControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonControl.m; sourceTree = "<group>"; };
+		8719EF9918ED88AC002D81AF /* NewWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewWindow.h; sourceTree = "<group>"; };
+		8719EF9A18ED88AD002D81AF /* NewWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewWindow.m; sourceTree = "<group>"; };
 		871D40AF18DC74AF00BB063F /* Windows */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Windows; sourceTree = BUILT_PRODUCTS_DIR; };
 		871D40B218DC74AF00BB063F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		871D40B518DC74AF00BB063F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				871D40B518DC74AF00BB063F /* main.m */,
+				8719EF9918ED88AC002D81AF /* NewWindow.h */,
+				8719EF9A18ED88AD002D81AF /* NewWindow.m */,
 				8719EF9618EC4450002D81AF /* ButtonControl.h */,
 				8719EF9718EC4450002D81AF /* ButtonControl.m */,
 				8719EF9318EC1A7F002D81AF /* TextAreaControl.h */,
@@ -163,6 +168,7 @@
 				871D40CD18E9B38E00BB063F /* Render.m in Sources */,
 				871D40C818E2E89400BB063F /* WindowControl.m in Sources */,
 				8719EF9818EC4450002D81AF /* ButtonControl.m in Sources */,
+				8719EF9B18ED88AD002D81AF /* NewWindow.m in Sources */,
 				8719EF9518EC1A7F002D81AF /* TextAreaControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

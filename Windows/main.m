@@ -11,11 +11,14 @@
 #import "Render.h"
 #import "TextAreaControl.h"
 #include "ButtonControl.h"
+#include "NewWindow.h"
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         id note;
+        id console;
+        id simple;
         // полезный код
         NSNumber *number, *number1;
         //create window
@@ -25,8 +28,8 @@ int main(int argc, const char * argv[])
         NSLog(@"heightWindow = %@", note[@"heightWindow"]);
         // create text area
         TextAreaControl *testarea = [TextAreaControl alloc];
-        [testarea setWidthWindow:(number=@20) setHeightWindow:(number1=@3) inArray:note];
-        [testarea insertText:@"text label" inArray:note];
+        [testarea setWidthWindow:(number=@5) setHeightWindow:(number1=@2) inArray:note];
+        [testarea insertText:@"hello world!" inArray:note];
         // create button
         
         ButtonControl *testButton = [ButtonControl alloc];
@@ -35,9 +38,15 @@ int main(int argc, const char * argv[])
         
         // render go
         Render *testRender = [Render alloc];
+        NewWindow *testW = [NewWindow alloc];
+        NewWindow *testA = [NewWindow alloc];
         [testRender go:note];
-
         
+        // render touch
+        console = [NSMutableArray arrayWithObjects: nil];
+        [testW createWindow:simple widthWindow:50 heightWindow:10 inArray:console];
+        [testA createWindow:simple widthWindow:10 heightWindow:5 inArray:console];
+        [testRender touch:console];
     }
     return 0;
 }

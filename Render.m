@@ -99,10 +99,16 @@
     // end button
     
     NSLog(@"%@", data);
-    NSLog(@"xPos=%d yPos=%d", xPosTextArea, yPosTextArea);
-    NSLog(@"text area: %@", contentTextArea);
-    NSLog(@"content: %@", content);
+ //   NSLog(@"xPos=%d yPos=%d", xPosTextArea, yPosTextArea);
+ //   NSLog(@"text area: %@", contentTextArea);
+ //   NSLog(@"content: %@", content);
 
+}
+
+-(void) touch:(id)note {
+    
+    NSLog(@"%@", note);
+    NSLog(@"test ok");
 }
 
 @end
