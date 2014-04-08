@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Windows/main.m"
-            timestampString = "418307269.252227"
+            timestampString = "418681780.606617"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "main()"
             landmarkType = "7">
          </BreakpointContent>
@@ -111,8 +111,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "10"
             endingLineNumber = "10"
-            landmarkName = "-createWindow:widthWindow:heightWindow:inArray:"
-            landmarkType = "5">
+            landmarkName = "@implementation NewWindow"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

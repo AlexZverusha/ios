@@ -39,13 +39,15 @@ int main(int argc, const char * argv[])
         // render go
         Render *testRender = [Render alloc];
         NewWindow *testW = [NewWindow alloc];
-        NewWindow *testA = [NewWindow alloc];
+     //   NewWindow *testA = [NewWindow alloc];
         [testRender go:note];
         
         // render touch
         console = [NSMutableArray arrayWithObjects: nil];
-        [testW createWindow:simple widthWindow:50 heightWindow:10 inArray:console];
-        [testA createWindow:simple widthWindow:10 heightWindow:5 inArray:console];
+        [testW createWindow:simple widthWindow:80 heightWindow:20 inArray:console];
+      //  [testA createWindow:simple widthWindow:10 heightWindow:5 inArray:console];
+        [testW createTab:2 widthTab:1 heightTab:1 inArray:console];
+        [testW createTab:1 widthTab:1 heightTab:1 inArray:console];
         [testRender touch:console];
     }
     return 0;

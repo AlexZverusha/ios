@@ -13,5 +13,7 @@
 }
 -(id) createWindow:(id)_window widthWindow:(int)width heightWindow:(int)height inArray:(id)note;
 //-(void) createText;
-//-(void) createButton(id) titleButton(id) positionButton(id);
+//-(void) createButton(id)title titleButton(id) positionButton(id);
+//-(void) createButton:(id)title position:(id)widh heightButton:(id)widh;
+-(id) createTab:(int)_position widthTab:(int)width heightTab:(int)height inArray:(id)note;
 @end
