@@ -21,4 +21,8 @@
 
 -(id) createWindow:id xPos:(int)x yPos:(int)y in:(id)data;
 
+-(id) createButton:(id)title position:(id)pos in:(id)data;
+
+-(id) createText:(id)text in:(id)data;
+
 @end

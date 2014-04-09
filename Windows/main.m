@@ -55,8 +55,9 @@ int main(int argc, const char * argv[])
         
         Create *newField = [Create alloc];
         [newField createFieldin:consoleData];
+        [newField createWindow:foo xPos:2 yPos:2 in:consoleData];
         [newField createWindow:foo xPos:10 yPos:5 in:consoleData];
-        [newField createWindow:foo xPos:25 yPos:10 in:consoleData];
+        [newField createWindow:foo xPos:15 yPos:7 in:consoleData];
         [testRender touch:consoleData];
     }
     return 0;
