@@ -12,6 +12,7 @@
 #import "TextAreaControl.h"
 #include "ButtonControl.h"
 #include "NewWindow.h"
+#include "Create.h"
 int main(int argc, const char * argv[])
 {
 
@@ -19,6 +20,8 @@ int main(int argc, const char * argv[])
         id note;
         id console;
         id simple;
+        id consoleData;
+        id foo;
         // полезный код
         NSNumber *number, *number1;
         //create window
@@ -44,11 +47,17 @@ int main(int argc, const char * argv[])
         
         // render touch
         console = [NSMutableArray arrayWithObjects: nil];
+        consoleData = [NSMutableArray arrayWithObjects: nil];
         [testW createWindow:simple widthWindow:80 heightWindow:20 inArray:console];
       //  [testA createWindow:simple widthWindow:10 heightWindow:5 inArray:console];
-        [testW createTab:2 widthTab:1 heightTab:1 inArray:console];
-        [testW createTab:1 widthTab:1 heightTab:1 inArray:console];
-        [testRender touch:console];
+      //  [testW createTab:2 widthTab:1 heightTab:1 inArray:console];
+      //  [testW createTab:1 widthTab:1 heightTab:1 inArray:console];
+        
+        Create *newField = [Create alloc];
+        [newField createFieldin:consoleData];
+        [newField createWindow:foo xPos:10 yPos:5 in:consoleData];
+        [newField createWindow:foo xPos:25 yPos:10 in:consoleData];
+        [testRender touch:consoleData];
     }
     return 0;
 }

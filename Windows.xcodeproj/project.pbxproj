@@ -15,6 +15,7 @@
 		871D40BA18DC74B000BB063F /* Windows.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 871D40B918DC74B000BB063F /* Windows.1 */; };
 		871D40C818E2E89400BB063F /* WindowControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 871D40C718E2E89400BB063F /* WindowControl.m */; };
 		871D40CD18E9B38E00BB063F /* Render.m in Sources */ = {isa = PBXBuildFile; fileRef = 871D40CC18E9B38E00BB063F /* Render.m */; };
+		87C9EB8018F53F5800FE6EF4 /* Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C9EB7F18F53F5800FE6EF4 /* Create.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +47,8 @@
 		871D40C718E2E89400BB063F /* WindowControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowControl.m; sourceTree = "<group>"; };
 		871D40CB18E9B38E00BB063F /* Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Render.h; path = ../Render.h; sourceTree = "<group>"; };
 		871D40CC18E9B38E00BB063F /* Render.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Render.m; path = ../Render.m; sourceTree = "<group>"; };
+		87C9EB7E18F53F5800FE6EF4 /* Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Create.h; sourceTree = "<group>"; };
+		87C9EB7F18F53F5800FE6EF4 /* Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Create.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				871D40B518DC74AF00BB063F /* main.m */,
+				87C9EB7E18F53F5800FE6EF4 /* Create.h */,
+				87C9EB7F18F53F5800FE6EF4 /* Create.m */,
 				8719EF9918ED88AC002D81AF /* NewWindow.h */,
 				8719EF9A18ED88AD002D81AF /* NewWindow.m */,
 				8719EF9618EC4450002D81AF /* ButtonControl.h */,
@@ -169,6 +174,7 @@
 				871D40C818E2E89400BB063F /* WindowControl.m in Sources */,
 				8719EF9818EC4450002D81AF /* ButtonControl.m in Sources */,
 				8719EF9B18ED88AD002D81AF /* NewWindow.m in Sources */,
+				87C9EB8018F53F5800FE6EF4 /* Create.m in Sources */,
 				8719EF9518EC1A7F002D81AF /* TextAreaControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

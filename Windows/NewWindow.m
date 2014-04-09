@@ -65,7 +65,7 @@ int i;
     // TAB
     NSMutableString *tab;
     NSMutableString *stroka;
-    NSMutableString *str = [[NSMutableString alloc] init];
+ //   NSMutableString *str = [[NSMutableString alloc] init];
     tab=[NSMutableString stringWithCapacity:100];
     stroka=[NSMutableString stringWithCapacity:100];
     // tab ------
