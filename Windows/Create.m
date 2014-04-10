@@ -95,6 +95,14 @@
         
     }
     
+    // down frame
+    datastring=[NSMutableString alloc];
+    datastring=[NSMutableString stringWithCapacity:100];
+    
+    [datastring insertString:(data[yEnd]) atIndex:0];
+    [datastring deleteCharactersInRange:NSMakeRange(xPos, [border length])];
+    [datastring insertString:frame atIndex:xPos];
+
     
     
     
