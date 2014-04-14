@@ -14,15 +14,18 @@
     NSMutableString *datastr;    // content string
     int i, width, height;
     int xPos, yPos;
+
+
+    
     
 }
 
 -(id) createFieldin:(id)data;
 
--(id) createWindow:id xPos:(int)x yPos:(int)y in:(id)data;
+-(id) createWindow:(int)id xPos:(int)x yPos:(int)y in:(id)data idInfo:(id)info;
 
 -(id) createButton:(id)title position:(id)pos in:(id)data;
 
--(id) createText:(id)text in:(id)data;
+-(id) createText:(id)text in:(id)data idInfo:(id)info Idwindows:(int)win;
 
 @end
